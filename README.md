@@ -40,7 +40,7 @@ npm install
 ### **3️⃣ Run the Application**
 
 ```sh
-npm start
+npm run build
 ```
 
 Open in your browser: **[http://localhost:5173](http://localhost:5173)**
