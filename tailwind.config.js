@@ -1,20 +1,17 @@
 import defaultTheme from "tailwindcss/defaultTheme";
 
-/** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php",
     "./storage/framework/views/*.php",
-    "./resources/**/*.blade.php",
-    "./resources/**/*.js",
-    "./resources/**/*.vue",
-    "./src/**/*.{html,js}", // Perbaikan jalur
-    "./public/**/*.blade.php", // Menggunakan ** untuk folder
+    "./resources/**/*.js",      
+    "./src/**/*.{html,js}",        
+    "./public/**/*.html",
+      "**/*.html",  
   ],
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Figtree", ...defaultTheme.fontFamily.sans],
+        sans: ["Figtree", ...defaultTheme.fontFamily.sans], 
       },
       colors: {
         satu: "#028174",
@@ -23,11 +20,11 @@ export default {
         empat: "#ffe3b3",
         putih: "#f7f7f7",
       },
-      scrollBehavior: ["smooth"],
+      scrollBehavior: ["smooth"],  
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui")], 
   daisyui: {
-    themes: ["light", "dark", "cupcake", "cyberpunk", "dim", "dracula"],
+    themes: ["light", "dark", "cupcake", "cyberpunk", "dim", "dracula"], 
   },
 };
