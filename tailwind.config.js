@@ -3,15 +3,15 @@ import defaultTheme from "tailwindcss/defaultTheme";
 export default {
   content: [
     "./storage/framework/views/*.php",
-    "./resources/**/*.js",      
-    "./src/**/*.{html,js}",        
+    "./resources/**/*.js",
+    "./src/**/*.{html,js}",
     "./public/**/*.html",
-      "**/*.html",  
+    "**/*.html",
   ],
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Figtree", ...defaultTheme.fontFamily.sans], 
+        sans: ["Figtree", ...defaultTheme.fontFamily.sans],
       },
       colors: {
         satu: "#028174",
@@ -20,11 +20,11 @@ export default {
         empat: "#ffe3b3",
         putih: "#f7f7f7",
       },
-      scrollBehavior: ["smooth"],  
+      scrollBehavior: ["smooth"],
     },
   },
-  plugins: [require("daisyui")], 
+  plugins: [require("daisyui")],
   daisyui: {
-    themes: ["light", "dark", "cupcake", "cyberpunk", "dim", "dracula"], 
+    themes: ["light", "dark", "cupcake", "cyberpunk", "dim", "dracula"],
   },
 };

@@ -5,29 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/img/favicon.png" type="icon/png" />
     <link rel="stylesheet" href="/src/output.css" />
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
 
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const links = document.querySelectorAll('a[href^="#"]');
-            links.forEach(link => {
-                link.addEventListener('click', function (event) {
-                    event.preventDefault();  // Prevent the default anchor behavior
-                    const targetId = link.getAttribute('href').substring(1); // Get the target element ID
-                    const targetElement = document.getElementById(targetId);
+      document.addEventListener("DOMContentLoaded", function () {
+        const links = document.querySelectorAll('a[href^="#"]');
+        links.forEach((link) => {
+          link.addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent the default anchor behavior
+            const targetId = link.getAttribute("href").substring(1); // Get the target element ID
+            const targetElement = document.getElementById(targetId);
 
-                    if (targetElement) {
-                        targetElement.scrollIntoView({
-                            behavior: 'smooth', // Smooth scroll effect
-                            block: 'start' // Align the target at the top of the viewport
-                        });
+            if (targetElement) {
+              targetElement.scrollIntoView({
+                behavior: "smooth", // Smooth scroll effect
+                block: "start", // Align the target at the top of the viewport
+              });
 
-                        // Change the URL without the hash (using History API)
-                        history.pushState(null, null, window.location.pathname);
-                    }
-                });
-            });
+              // Change the URL without the hash (using History API)
+              history.pushState(null, null, window.location.pathname);
+            }
+          });
         });
+      });
     </script>
     <title>Talkatry</title>
   </head>
@@ -62,8 +65,7 @@
             <li><a href="index.html#penyakit">Treatment</a></li>
           </ul>
         </div>
-    <a href="index.html" class="btn btn-ghost text-xl">Talkatry</a>
-
+        <a href="index.html" class="btn btn-ghost text-xl">Talkatry</a>
       </div>
       <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-1">
@@ -78,66 +80,107 @@
       </div>
     </div>
 
-<!-- Hero/Landing Page -->
-<div class="hero bg-cream min-h-screen flex flex-col lg:flex-row justify-between items-center p-6">
-    <!-- Right Side Image on Mobile -->
-    <div class="lg:w-1/2 w-full flex justify-center lg:justify-end mb-6 lg:mb-0 mt-10 lg:mt-0">
-        <img src="/img/4.png" alt="Illustration" class="lg:mr-12 w-full max-w-lg mx-auto object-cover">
-    </div>
+    <!-- Hero/Landing Page -->
+    <div
+      class="hero bg-cream min-h-screen flex flex-col lg:flex-row justify-between items-center p-6"
+    >
+      <!-- Right Side Image on Mobile -->
+      <div
+        class="lg:w-1/2 w-full flex justify-center lg:justify-end mb-6 lg:mb-0 mt-10 lg:mt-0"
+      >
+        <img
+          src="/img/4.png"
+          alt="Illustration"
+          class="lg:mr-12 w-full max-w-lg mx-auto object-cover"
+        />
+      </div>
 
-    <!-- Left Side Text -->
-    <div class="text-center lg:text-left flex flex-col items-center lg:items-start lg:w-1/2">
+      <!-- Left Side Text -->
+      <div
+        class="text-center lg:text-left flex flex-col items-center lg:items-start lg:w-1/2"
+      >
         <h1 class="text-4xl lg:text-5xl font-bold text-gray-800">
-            Psychiatry That Prioritizes You
+          Psychiatry That Prioritizes You
         </h1>
         <p class="py-6 text-lg text-gray-700">
-            Virtual Mental Health Care Tailored to Your Needs
+          Virtual Mental Health Care Tailored to Your Needs
         </p>
 
         <!-- Feature List -->
         <div class="flex flex-col space-y-4 mt-4">
-            <div class="flex items-center justify-center lg:justify-start">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-2 text-dua" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <span class="text-lg text-gray-600">
-                    Virtual Visits - Connect with professionals from the comfort of your home.
-                </span>
-            </div>
+          <div class="flex items-center justify-center lg:justify-start">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-6 h-6 mx-2 text-dua"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+            <span class="text-lg text-gray-600">
+              Virtual Visits - Connect with professionals from the comfort of
+              your home.
+            </span>
+          </div>
 
-            <div class="flex items-center justify-center lg:justify-start">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-2 text-dua" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <span class="text-lg text-gray-600">
-                    Insurance Accepted - Making mental health care accessible for everyone.
-                </span>
-            </div>
+          <div class="flex items-center justify-center lg:justify-start">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-6 h-6 mx-2 text-dua"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+            <span class="text-lg text-gray-600">
+              Insurance Accepted - Making mental health care accessible for
+              everyone.
+            </span>
+          </div>
 
-            <div class="flex items-center justify-center lg:justify-start">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-2 text-dua" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <span class="text-lg text-gray-600">
-                    Doctors Who Listen - We prioritize your needs and concerns.
-                </span>
-            </div>
+          <div class="flex items-center justify-center lg:justify-start">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-6 h-6 mx-2 text-dua"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+            <span class="text-lg text-gray-600">
+              Doctors Who Listen - We prioritize your needs and concerns.
+            </span>
+          </div>
         </div>
 
         <br />
-        <a href="login.html"
-            class="btn bg-dua text-white py-2 px-4 rounded-lg hover:bg-empat transition duration-300">Start Our Short
-            Assessment</a>
+        <a
+          href="login.html"
+          class="btn bg-dua text-white py-2 px-4 rounded-lg hover:bg-empat transition duration-300"
+          >Start Our Short Assessment</a
+        >
+      </div>
     </div>
-</div>
 
-<div class="py-12"></div>
+    <div class="py-12"></div>
 
     <!-- Section  -->
     <div class="hero bg-base-200 min-h-screen">
@@ -167,18 +210,15 @@
             class="mt-4 inline-block bg-dua text-white py-2 px-4 rounded hover:bg-empat transition duration-300"
             >Learn More</a
           >
-        <div class="py-12"></div>
+          <div class="py-12"></div>
         </div>
       </div>
     </div>
 
-
     <!-- Section 0 -->
     <div class="m-12 py-12">
       <div id="penyakit" class="px-4 sm:px-8 max-w-5xl m-auto py-24">
-        <h1
-          class="text-3xl font-bold text-center mb-8 text-black pb-12"
-        >
+        <h1 class="text-3xl font-bold text-center mb-8 text-black pb-12">
           What we specialize in
         </h1>
 
@@ -315,285 +355,406 @@
       </div>
     </section>
 
+    <!-- Section - Review -->
+    <div
+      id="review"
+      class="mt-4 font-[sans-serif] mx-auto relative mb-12 py-12"
+    >
+      <div class="mb-12 text-center">
+        <h2 class="text-gray-800 text-4xl font-bold clearfix">
+          What our clients say
+        </h2>
+      </div>
 
-<!-- Section - Review -->
-<div id="review" class="mt-4 font-[sans-serif] mx-auto relative mb-12 py-12" 
-  >
-  <div class="mb-12 text-center">
-    <h2 class="text-gray-800 text-4xl font-bold clearfix">
-      What our clients say
-    </h2>
-  </div>
+      <div class="carousel-container flex justify-center items-center py-12">
+        <!-- Carousel container -->
+        <div class="carousel overflow-hidden relative">
+          <!-- Slides wrapper -->
+          <div
+            id="carousel-slides"
+            class="flex gap-6 transition-transform duration-700 ease-out"
+          >
+            <!-- Slide 1 -->
+            <div class="flex-shrink-0 p-6 bg-gray-100 rounded-lg w-64">
+              <div class="flex flex-col items-center gap-4">
+                <img
+                  src="/img/lego1.jpg"
+                  class="w-14 h-14 rounded-full border-4 border-white"
+                />
+                <h4 class="text-gray-800 text-sm font-bold">John Doe</h4>
+              </div>
+              <div class="flex space-x-1 mt-4">
+                <!-- Rating Stars -->
+              </div>
+              <div class="mt-6">
+                <p class="text-gray-800 text-sm leading-relaxed">
+                  "The online treatment was fantastic. The consultation process
+                  was smooth..."
+                </p>
+              </div>
+            </div>
 
-  <div class="carousel-container flex justify-center items-center py-12">
-    <!-- Carousel container -->
-    <div class="carousel overflow-hidden relative">
-      <!-- Slides wrapper -->
-      <div id="carousel-slides" class="flex gap-6 transition-transform duration-700 ease-out">
-        <!-- Slide 1 -->
-        <div class="flex-shrink-0 p-6 bg-gray-100 rounded-lg w-64">
-          <div class="flex flex-col items-center gap-4">
-            <img src="/img/lego1.jpg" class="w-14 h-14 rounded-full border-4 border-white" />
-            <h4 class="text-gray-800 text-sm font-bold">John Doe</h4>
+            <!-- Slide 2 -->
+            <div class="flex-shrink-0 p-6 bg-gray-100 rounded-lg w-64">
+              <div class="flex flex-col items-center gap-4">
+                <img
+                  src="/img/lego2.jpg"
+                  class="w-14 h-14 rounded-full border-4 border-white"
+                />
+                <h4 class="text-gray-800 text-sm font-bold">Mark Adair</h4>
+              </div>
+              <div class="flex space-x-1 mt-4">
+                <!-- Rating Stars -->
+              </div>
+              <div class="mt-6">
+                <p class="text-gray-800 text-sm leading-relaxed">
+                  "I was a bit skeptical about getting treatment online, but it
+                  exceeded my expectations..."
+                </p>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="flex-shrink-0 p-6 bg-gray-100 rounded-lg w-64">
+              <div class="flex flex-col items-center gap-4">
+                <img
+                  src="/img/lego3.jpg"
+                  class="w-14 h-14 rounded-full border-4 border-white"
+                />
+                <h4 class="text-gray-800 text-sm font-bold">Sara Nguyen</h4>
+              </div>
+              <div class="flex space-x-1 mt-4">
+                <!-- Rating Stars -->
+              </div>
+              <div class="mt-6">
+                <p class="text-gray-800 text-sm leading-relaxed">
+                  "This online consultation saved me a lot of time, and the
+                  treatment was as effective as visiting a clinic..."
+                </p>
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="flex-shrink-0 p-6 bg-gray-100 rounded-lg w-64">
+              <div class="flex flex-col items-center gap-4">
+                <img
+                  src="/img/lego4.jpg"
+                  class="w-14 h-14 rounded-full border-4 border-white"
+                />
+                <h4 class="text-gray-800 text-sm font-bold">Jane Doe</h4>
+              </div>
+              <div class="flex space-x-1 mt-4">
+                <!-- Rating Stars -->
+              </div>
+              <div class="mt-6">
+                <p class="text-gray-800 text-sm leading-relaxed">
+                  "The online therapy was incredibly effective, and the
+                  personalized advice I received really helped my situation..."
+                </p>
+              </div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="flex-shrink-0 p-6 bg-gray-100 rounded-lg w-64">
+              <div class="flex flex-col items-center gap-4">
+                <img
+                  src="/img/lego5.jpg"
+                  class="w-14 h-14 rounded-full border-4 border-white"
+                />
+                <h4 class="text-gray-800 text-sm font-bold">David Smith</h4>
+              </div>
+              <div class="flex space-x-1 mt-4">
+                <!-- Rating Stars -->
+              </div>
+              <div class="mt-6">
+                <p class="text-gray-800 text-sm leading-relaxed">
+                  "I was hesitant at first, but the online consultation was very
+                  professional and effective..."
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="flex space-x-1 mt-4">
-            <!-- Rating Stars -->
-          </div>
-          <div class="mt-6">
-            <p class="text-gray-800 text-sm leading-relaxed">"The online treatment was fantastic. The
-              consultation process was smooth..."</p>
-          </div>
+
+          <!-- Previous and Next buttons -->
+          <button
+            id="prev-slide"
+            class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-transparent p-3 shadow-md text-2xl"
+          >
+            ❮
+          </button>
+          <button
+            id="next-slide"
+            class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-transparent p-3 shadow-md text-2xl"
+          >
+            ❯
+          </button>
         </div>
+      </div>
+    </div>
 
-        <!-- Slide 2 -->
-        <div class="flex-shrink-0 p-6 bg-gray-100 rounded-lg w-64">
-          <div class="flex flex-col items-center gap-4">
-            <img src="/img/lego2.jpg" class="w-14 h-14 rounded-full border-4 border-white" />
-            <h4 class="text-gray-800 text-sm font-bold">Mark Adair</h4>
-          </div>
-          <div class="flex space-x-1 mt-4">
-            <!-- Rating Stars -->
-          </div>
-          <div class="mt-6">
-            <p class="text-gray-800 text-sm leading-relaxed">"I was a bit skeptical about getting treatment
-              online, but it exceeded my expectations..."</p>
-          </div>
-        </div>
+    <script>
+      const slides = document.getElementById("carousel-slides");
+      const slideWidth = slides.children[0].offsetWidth;
+      let currentIndex = 0;
 
-        <!-- Slide 3 -->
-        <div class="flex-shrink-0 p-6 bg-gray-100 rounded-lg w-64">
-          <div class="flex flex-col items-center gap-4">
-            <img src="/img/lego3.jpg" class="w-14 h-14 rounded-full border-4 border-white" />
-            <h4 class="text-gray-800 text-sm font-bold">Sara Nguyen</h4>
-          </div>
-          <div class="flex space-x-1 mt-4">
-            <!-- Rating Stars -->
-          </div>
-          <div class="mt-6">
-            <p class="text-gray-800 text-sm leading-relaxed">"This online consultation saved me a lot of time,
-              and the treatment was as effective as visiting a clinic..."</p>
-          </div>
-        </div>
+      // Function to update slide position
+      function updateSliderPosition() {
+        slides.style.transform = `translateX(-${currentIndex * slideWidth}px)`; // Corrected this line with backticks
+      }
 
-        <!-- Slide 4 -->
-        <div class="flex-shrink-0 p-6 bg-gray-100 rounded-lg w-64">
-          <div class="flex flex-col items-center gap-4">
-            <img src="/img/lego4.jpg" class="w-14 h-14 rounded-full border-4 border-white" />
-            <h4 class="text-gray-800 text-sm font-bold">Jane Doe</h4>
-          </div>
-          <div class="flex space-x-1 mt-4">
-            <!-- Rating Stars -->
-          </div>
-          <div class="mt-6">
-            <p class="text-gray-800 text-sm leading-relaxed">"The online therapy was incredibly effective, and
-              the personalized advice I received really helped my situation..."</p>
-          </div>
-        </div>
+      // Next slide action
+      document.getElementById("next-slide").addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % 3; // Loop through 5 slides (adjust the number accordingly)
+        updateSliderPosition();
+      });
 
-        <!-- Slide 5 -->
-        <div class="flex-shrink-0 p-6 bg-gray-100 rounded-lg w-64">
-          <div class="flex flex-col items-center gap-4">
-            <img src="/img/lego5.jpg" class="w-14 h-14 rounded-full border-4 border-white" />
-            <h4 class="text-gray-800 text-sm font-bold">David Smith</h4>
-          </div>
-          <div class="flex space-x-1 mt-4">
-            <!-- Rating Stars -->
-          </div>
-          <div class="mt-6">
-            <p class="text-gray-800 text-sm leading-relaxed">"I was hesitant at first, but the online
-              consultation was very professional and effective..."</p>
+      // Previous slide action
+      document.getElementById("prev-slide").addEventListener("click", () => {
+        currentIndex = (currentIndex - 1 + 5) % 3; // Loop through 5 slides (adjust the number accordingly)
+        updateSliderPosition();
+      });
+
+      // Auto-slide every 4 seconds
+      setInterval(() => {
+        currentIndex = (currentIndex + 1) % 2; // Loop through 5 slides (adjust the number accordingly)
+        updateSliderPosition();
+      }, 4000); // 4 seconds interval for auto-sliding
+    </script>
+
+    <!-- Section 3 - FAQ  -->
+    <section id="faq" class="bg-white z-0 py-24">
+      <div
+        class="container px-4 py-8 mx-auto max-w-2xl overflow-x-hidden overflow-y-auto z-0"
+      >
+        <h1
+          class="text-2xl font-semibold text-center text-gray-800 lg:text-4xl mb-20"
+        >
+          Frequently Asked Questions
+        </h1>
+
+        <div class="mt-8 xl:mt-12 lg:flex lg:justify-center">
+          <!-- FAQ Section -->
+          <div class="flex-1 mt-8 lg:mt-0">
+            <!-- FAQ 1 -->
+            <div x-data="{ open: false }">
+              <button
+                @click="open = !open"
+                class="flex items-center focus:outline-none py-2"
+              >
+                <svg
+                  :class="{ 'transform rotate-180': open }"
+                  class="w-6 h-6 text-tiga transition-transform"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M20 12H4"
+                  ></path>
+                </svg>
+                <h1 class="mx-4 text-xl text-gray-700">
+                  What services does Talkatry offer?
+                </h1>
+              </button>
+
+              <div
+                x-show="open"
+                class="flex mt-4 md:mx-6 transition-all duration-300 ease-in-out"
+              >
+                <span class="border-l-2 border-tiga"></span>
+                <p class="max-w-3xl px-4">
+                  Talkatry provides online psychiatric evaluations, therapy
+                  sessions, medication management, and support for various
+                  mental health issues including anxiety, depression, and stress
+                  management.
+                </p>
+              </div>
+            </div>
+
+            <hr class="my-6 border-gray-200 dark:border-gray-700" />
+
+            <!-- FAQ 2 -->
+            <div x-data="{ open: false }">
+              <button
+                @click="open = !open"
+                class="flex items-center focus:outline-none py-2"
+              >
+                <svg
+                  :class="{ 'transform rotate-180': open }"
+                  class="w-6 h-6 text-tiga transition-transform"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M20 12H4"
+                  ></path>
+                </svg>
+                <h1 class="mx-4 text-xl text-gray-700">
+                  How do I schedule an appointment?
+                </h1>
+              </button>
+
+              <div
+                x-show="open"
+                class="flex mt-4 md:mx-6 transition-all duration-300 ease-in-out"
+              >
+                <span class="border-l-2 border-tiga"></span>
+                <p class="max-w-3xl px-4">
+                  You can schedule an appointment by visiting our website and
+                  using the booking system. Simply select a date and time that
+                  works for you, and follow the prompts to complete your
+                  booking.
+                </p>
+              </div>
+            </div>
+
+            <hr class="my-6 border-gray-200 dark:border-gray-700" />
+
+            <!-- FAQ 3 -->
+            <div x-data="{ open: false }">
+              <button
+                @click="open = !open"
+                class="flex items-center focus:outline-none py-2"
+              >
+                <svg
+                  :class="{ 'transform rotate-180': open }"
+                  class="w-6 h-6 text-tiga transition-transform"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M20 12H4"
+                  ></path>
+                </svg>
+                <h1 class="mx-4 text-xl text-gray-700">
+                  Is Talkatry confidential?
+                </h1>
+              </button>
+
+              <div
+                x-show="open"
+                class="flex mt-4 md:mx-6 transition-all duration-300 ease-in-out"
+              >
+                <span class="border-l-2 border-tiga"></span>
+                <p class="max-w-3xl px-4">
+                  Yes, all sessions are completely confidential. We adhere to
+                  strict privacy policies and HIPAA regulations to ensure your
+                  information is secure and private.
+                </p>
+              </div>
+            </div>
+
+            <hr class="my-6 border-gray-200 dark:border-gray-700" />
+
+            <!-- FAQ 4 -->
+            <div x-data="{ open: false }">
+              <button
+                @click="open = !open"
+                class="flex items-center focus:outline-none py-2"
+              >
+                <svg
+                  :class="{ 'transform rotate-180': open }"
+                  class="w-6 h-6 text-tiga transition-transform"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M20 12H4"
+                  ></path>
+                </svg>
+                <h1 class="mx-4 text-xl text-gray-700">
+                  What should I expect during my first session?
+                </h1>
+              </button>
+
+              <div
+                x-show="open"
+                class="flex mt-4 md:mx-6 transition-all duration-300 ease-in-out"
+              >
+                <span class="border-l-2 border-tiga"></span>
+                <p class="max-w-3xl px-4">
+                  During your first session, the psychiatrist will ask you
+                  questions about your mental health history, current concerns,
+                  and goals for therapy. This helps us tailor our approach to
+                  best meet your needs.
+                </p>
+              </div>
+            </div>
+
+            <hr class="my-6 border-gray-200 dark:border-gray-700" />
+
+            <!-- FAQ 5 -->
+            <div x-data="{ open: false }">
+              <button
+                @click="open = !open"
+                class="flex items-center focus:outline-none py-2"
+              >
+                <svg
+                  :class="{ 'transform rotate-180': open }"
+                  class="w-6 h-6 text-tiga transition-transform"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M20 12H4"
+                  ></path>
+                </svg>
+                <h1 class="mx-4 text-xl text-gray-700">
+                  What if I need to cancel or reschedule my appointment?
+                </h1>
+              </button>
+
+              <div
+                x-show="open"
+                class="flex mt-4 md:mx-6 transition-all duration-300 ease-in-out"
+              >
+                <span class="border-l-2 border-tiga"></span>
+                <p class="max-w-3xl px-4">
+                  If you need to cancel or reschedule your appointment, please
+                  do so at least 24 hours in advance through our website or by
+                  contacting our support team. This allows us to offer your spot
+                  to another patient.
+                </p>
+              </div>
+            </div>
+
+            <hr class="my-6 border-gray-200 dark:border-gray-700" />
           </div>
         </div>
       </div>
-
-      <!-- Previous and Next buttons -->
-      <button id="prev-slide"
-        class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-transparent p-3 shadow-md text-2xl">
-        ❮
-      </button>
-      <button id="next-slide"
-        class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-transparent p-3 shadow-md text-2xl">
-        ❯
-      </button>
-    </div>
-  </div>
-</div>
-
-<script>
-  const slides = document.getElementById("carousel-slides");
-  const slideWidth = slides.children[0].offsetWidth;
-  let currentIndex = 0;
-
-  // Function to update slide position
-  function updateSliderPosition() {
-    slides.style.transform = `translateX(-${currentIndex * slideWidth}px)`; // Corrected this line with backticks
-  }
-
-  // Next slide action
-  document.getElementById("next-slide").addEventListener("click", () => {
-    currentIndex = (currentIndex + 1) % 3;  // Loop through 5 slides (adjust the number accordingly)
-    updateSliderPosition();
-  });
-
-  // Previous slide action
-  document.getElementById("prev-slide").addEventListener("click", () => {
-    currentIndex = (currentIndex - 1 + 5) % 3;  // Loop through 5 slides (adjust the number accordingly)
-    updateSliderPosition();
-  });
-
-  // Auto-slide every 4 seconds
-  setInterval(() => {
-    currentIndex = (currentIndex + 1) % 2;  // Loop through 5 slides (adjust the number accordingly)
-    updateSliderPosition();
-  }, 4000); // 4 seconds interval for auto-sliding
-</script>
-
-
-<!-- Section 3 - FAQ  -->
-<section id="faq" class="bg-white z-0 py-24">
-  <div class="container px-4 py-8 mx-auto max-w-2xl overflow-x-hidden overflow-y-auto z-0">
-    <h1 class="text-2xl font-semibold text-center text-gray-800 lg:text-4xl mb-20">
-      Frequently Asked Questions
-    </h1>
-
-    <div class="mt-8 xl:mt-12 lg:flex lg:justify-center">
-      <!-- FAQ Section -->
-      <div class="flex-1 mt-8 lg:mt-0">
-        <!-- FAQ 1 -->
-        <div x-data="{ open: false }">
-          <button @click="open = !open" class="flex items-center focus:outline-none py-2">
-            <svg :class="{ 'transform rotate-180': open }" class="w-6 h-6 text-tiga transition-transform" fill="none"
-              stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
-            </svg>
-            <h1 class="mx-4 text-xl text-gray-700">
-              What services does Talkatry offer?
-            </h1>
-          </button>
-
-          <div x-show="open" class="flex mt-4 md:mx-6 transition-all duration-300 ease-in-out">
-            <span class="border-l-2 border-tiga"></span>
-            <p class="max-w-3xl px-4">
-              Talkatry provides online psychiatric evaluations, therapy
-              sessions, medication management, and support for various
-              mental health issues including anxiety, depression, and stress
-              management.
-            </p>
-          </div>
-        </div>
-
-        <hr class="my-6 border-gray-200 dark:border-gray-700" />
-
-        <!-- FAQ 2 -->
-        <div x-data="{ open: false }">
-          <button @click="open = !open" class="flex items-center focus:outline-none py-2">
-            <svg :class="{ 'transform rotate-180': open }" class="w-6 h-6 text-tiga transition-transform" fill="none"
-              stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
-            </svg>
-            <h1 class="mx-4 text-xl text-gray-700">
-              How do I schedule an appointment?
-            </h1>
-          </button>
-
-          <div x-show="open" class="flex mt-4 md:mx-6 transition-all duration-300 ease-in-out">
-            <span class="border-l-2 border-tiga"></span>
-            <p class="max-w-3xl px-4">
-              You can schedule an appointment by visiting our website and
-              using the booking system. Simply select a date and time that
-              works for you, and follow the prompts to complete your
-              booking.
-            </p>
-          </div>
-        </div>
-
-        <hr class="my-6 border-gray-200 dark:border-gray-700" />
-
-        <!-- FAQ 3 -->
-        <div x-data="{ open: false }">
-          <button @click="open = !open" class="flex items-center focus:outline-none py-2">
-            <svg :class="{ 'transform rotate-180': open }" class="w-6 h-6 text-tiga transition-transform" fill="none"
-              stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
-            </svg>
-            <h1 class="mx-4 text-xl text-gray-700">
-              Is Talkatry confidential?
-            </h1>
-          </button>
-
-          <div x-show="open" class="flex mt-4 md:mx-6 transition-all duration-300 ease-in-out">
-            <span class="border-l-2 border-tiga"></span>
-            <p class="max-w-3xl px-4">
-              Yes, all sessions are completely confidential. We adhere to
-              strict privacy policies and HIPAA regulations to ensure your
-              information is secure and private.
-            </p>
-          </div>
-        </div>
-
-        <hr class="my-6 border-gray-200 dark:border-gray-700" />
-
-        <!-- FAQ 4 -->
-        <div x-data="{ open: false }">
-          <button @click="open = !open" class="flex items-center focus:outline-none py-2">
-            <svg :class="{ 'transform rotate-180': open }" class="w-6 h-6 text-tiga transition-transform" fill="none"
-              stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
-            </svg>
-            <h1 class="mx-4 text-xl text-gray-700">
-              What should I expect during my first session?
-            </h1>
-          </button>
-
-          <div x-show="open" class="flex mt-4 md:mx-6 transition-all duration-300 ease-in-out">
-            <span class="border-l-2 border-tiga"></span>
-            <p class="max-w-3xl px-4">
-              During your first session, the psychiatrist will ask you
-              questions about your mental health history, current concerns,
-              and goals for therapy. This helps us tailor our approach to
-              best meet your needs.
-            </p>
-          </div>
-        </div>
-
-        <hr class="my-6 border-gray-200 dark:border-gray-700" />
-
-        <!-- FAQ 5 -->
-        <div x-data="{ open: false }">
-          <button @click="open = !open" class="flex items-center focus:outline-none py-2">
-            <svg :class="{ 'transform rotate-180': open }" class="w-6 h-6 text-tiga transition-transform" fill="none"
-              stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
-            </svg>
-            <h1 class="mx-4 text-xl text-gray-700">
-              What if I need to cancel or reschedule my appointment?
-            </h1>
-          </button>
-
-          <div x-show="open" class="flex mt-4 md:mx-6 transition-all duration-300 ease-in-out">
-            <span class="border-l-2 border-tiga"></span>
-            <p class="max-w-3xl px-4">
-              If you need to cancel or reschedule your appointment, please
-              do so at least 24 hours in advance through our website or by
-              contacting our support team. This allows us to offer your spot
-              to another patient.
-            </p>
-          </div>
-        </div>
-
-        <hr class="my-6 border-gray-200 dark:border-gray-700" />
-      </div>
-    </div>
-  </div>
-</section>
-
-
+    </section>
 
     <!-- Alpine.js for toggle functionality -->
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.10.2/dist/cdn.min.js"></script>
 
     <!-- Footer  -->
-    <footer class="footer bg-base-200 text-base-content p-10 flex justify-between space-x-10">
+    <footer
+      class="footer bg-base-200 text-base-content p-10 flex justify-between space-x-10"
+    >
       <nav class="flex-1">
         <h6 class="footer-title">Services</h6>
         <a class="link link-hover">Branding</a>
@@ -615,7 +776,9 @@
         <a class="link link-hover">Cookie policy</a>
       </nav>
     </footer>
-    <footer2 class="footer bg-base-200 text-base-content border-base-300 border-t px-10 py-4">
+    <footer2
+      class="footer bg-base-200 text-base-content border-base-300 border-t px-10 py-4"
+    >
       <aside class="grid-flow-col items-center">
         <img src="/img/favicon.png" alt="Logo" class="h-10" />
         <!-- Change made here -->
@@ -628,24 +791,42 @@
       <nav class="md:place-self-center md:justify-self-end">
         <div class="grid grid-flow-col gap-4">
           <a>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current"
+            >
               <path
-                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
-              </path>
+                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+              ></path>
             </svg>
           </a>
           <a>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current"
+            >
               <path
-                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
-              </path>
+                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+              ></path>
             </svg>
           </a>
           <a>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current"
+            >
               <path
-                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
-              </path>
+                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+              ></path>
             </svg>
           </a>
         </div>
